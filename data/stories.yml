@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+- story: Saudacao
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - action: utter_dados_cliente
+    
+
+- story: Identificacao de problema
+  steps:
+    
+    - intent: dados_cliente
+    - action: utter_desejo_cliente
+    
+
+- story: Desejo perda
+  steps:
+    - intent: perda
+    - action: utter_perda
+    - intent: storytelling_perda
+    - action: utter_finalizacao
+
+- story: Desejo fraude
+  steps:
+    - intent: fraudado
+    - action: utter_fraudado
+    - intent: storytelling_fraude
+    - action: utter_finalizacao
+
+- story: Desejo login
+  steps:
+    - intent: login
+    - action: utter_login
+    - action: utter_finalizacao
+

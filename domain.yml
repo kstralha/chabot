@@ -1,0 +1,76 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - agradecimento
+  - finalizacao
+  - dados_cliente
+  - desejo
+  - perda
+  - login
+  - fraudado
+  - storytelling_perda
+  - storytelling_fraude
+
+entities:
+  - email
+  - cpf
+  - problema
+
+slots:
+
+  email:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: email
+
+
+
+  
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Bem-vindo(a) à central de atendimento do C7 Bank."
+
+  utter_dados_cliente:
+    - text: "Antes de darmos continuidade, preciso de alguns dados: CPF, E-mail e Telefone. Por favor, informe-os."
+
+  utter_desejo_cliente:
+    - text: "Obrigado pelos dados. Como podemos ajudar?\n1. Perda de cartão\n2. Problemas de login\n3. Fraude\n Digite em poucas palavras sobre o assunto que deseja tratar."
+
+  utter_finalizacao:
+    - text: "Certo, iremos encaminhar essas informações para nossa central de atendimento. Logo mais entraremos em contato novamente para a tratativa."
+
+  utter_agradecimento:
+    - text: "Ficamos à disposição!"
+
+  utter_perda:
+    - text: "Me explique o que aconteceu para que possamos prosseguir."
+
+  utter_login:
+    - text: "Te encaminhamos um passo-a-passo no e-mail cadastrado para recuperação de login."
+
+  utter_fraudado:
+    - text: "Iremos analisar sua solicitação e entraremos em contato pelo e-mail {email} cadastrado para dar continuidade no processo de investigação."
+
+  utter_obrigado:
+    - text: "Obrigado."
+
+actions:
+  - utter_agradecimento
+  - utter_dados_cliente
+  - utter_desejo_cliente
+  - utter_finalizacao
+  - utter_fraudado
+  - utter_login
+  - utter_obrigado
+  - utter_perda
+  - utter_saudacao
+  - storytelling  
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

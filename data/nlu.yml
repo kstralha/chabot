@@ -1,0 +1,177 @@
+version: "3.1"
+
+nlu:
+- lookup: email
+  examples: |
+    - exemplo@hotmail.com
+    - pedro@gmail.com
+    - kayquemiranda@yahoo.com
+    - joaoqsilva@icloud.com
+    - mariana@outlook.com
+
+
+- intent: saudacao
+  examples: |
+    - E aí?
+    - Oi, tudo bem?
+    - Salve!
+    - Fala!
+    - Beleza?
+    - E aí, sumido(a)?
+    - Boa!
+    - Salve, salve!
+    - E aí, tudo tranquilo?
+    - Opa, tudo certo?
+    - E aí, como vai?
+    - Bom dia.
+    - Boa tarde.
+    - Boa noite.
+    - Salve! Como vai?
+    - Como vai? Tudo bem?
+    - Gostaria de cumprimentá-lo(a).
+    - Seja bem-vindo(a).
+    - Seja bem-vindo(a) de volta.
+    - É um prazer falar com você.
+    - Como posso ajudar?
+    - Oi, td bem?
+    - Eae, blz?
+    - Fala, tudo tranquilo?
+    - Blz, e vc?
+    - E aí, sumido?
+    - Opa, tudo certo?
+    - Boa! E aí?
+    - Salve, salve! Como vai?
+    - E aí, como vai? Tudo tranquilo?
+    - Opa, tudo certo? Como posso ajudar?
+
+- intent: dados_cliente
+  examples: |
+    - (11) 98765-4321
+    - (21) 91234-5678
+    - (31) 99876-5432
+    - (41) 98123-4567
+    - (51) 99765-4321
+    - (61) 98712-3456
+    - (71) 99654-3210
+    - (81) 91234-0987
+    - (91) 98765-4321
+    - (32) 99876-1234
+    - (42) 98123-6543
+    - (52) 99765-9876
+    - (62) 98712-4567
+    - (72) 99654-8765
+    - (82) 91234-5432
+    - 123.456.789-09
+    - 234.567.890-67
+    - 678.901.234-78
+    - 890.234.567-89
+    - 345.678.901-90
+    - 567.123.890-01
+    - 890.345.678-12
+    - 345.890.123-23
+    - 678.234.567-34
+    - 234.890.678-45
+    - [exemplo1@gmail.com](email)
+    - [usuario2@yahoo.com.br](email)
+    - [teste3@outlook.com](email)
+    - [contato4@empresa.com](email)
+
+- intent: agradecimento
+  examples: |
+    - Obrigado
+    - Valeu
+    - Muito obrigado
+    - Agradeço
+    - Obrigada
+    - Agradeço pela ajuda
+    - Valeu pela atenção
+    - Muito obrigado pela assistência
+    - Gratidão
+    - Fico agradecido
+    - vlw
+    - tmj
+    - obg
+
+- intent: desejo
+  examples: |
+    - perda
+    - fraude
+    - bloqueio
+    - ajuda
+    - perdi meu cartão
+    - extravio de cartão
+    - cartão desaparecido
+    - sumiu meu cartão
+    - não encontro meu cartão
+    - roubo de cartão
+    - cartão foi levado
+    - cartão perdido
+    - cartão bloqueado por perda
+    - cartão não está comigo
+    - transação suspeita
+    - compra não reconhecida
+    - fraude no cartão
+    - clonaram meu cartão
+    - atividade incomum
+    - roubo de identidade
+    - alguém usou meu cartão
+    - movimentação estranha
+    - cobrança indevida
+    - clonagem de conta
+    - não consigo entrar na conta
+    - problema no login
+    - senha incorreta
+    - esqueci minha senha
+    - bloqueio de conta
+    - não consigo acessar minha conta
+    - erro no login
+    - tentei acessar e não consegui
+    - bloqueio por tentativas
+
+- intent: perda
+  examples: |
+    - perda de cartão
+    - número um
+    - perdi meu cartão
+
+
+- intent: login
+  examples: |
+    - Não consigo acessar minha conta
+    - Esqueci minha senha
+    - Preciso de ajuda para fazer login
+    - Não lembro minha senha
+    - Não consigo entrar
+    - Minha conta está bloqueada
+
+- intent: fraudado
+  examples: |
+    - opção três
+    - fraude
+    - golpe
+
+- intent: storytelling_perda
+  examples: |
+    - Eu perdi meu cartão de crédito
+    - Acho que meu cartão foi perdido
+    - Perdi meu cartão
+    - Não consigo encontrar meu cartão
+    - Não sei onde está meu cartão
+    - Meu cartão sumiu
+    - Meu cartão foi roubado
+    - Alguém roubou meu cartão
+    - Meu cartão de débito foi perdido
+    - Preciso reportar a perda do meu cartão
+
+- intent: storytelling_fraude
+  examples: |
+    - Houve fraude no meu cartão
+    - Usaram meu cartão sem permissão
+    - Meu cartão foi clonado
+    - Compraram com meu cartão
+    - Recebi uma compra que não fiz
+    - Estou sofrendo fraude
+    - Houve uma transação suspeita
+    - Meu cartão foi usado de forma errada
+    - Cobrança indevida no meu cartão
+    - Meu cartão foi comprometido
